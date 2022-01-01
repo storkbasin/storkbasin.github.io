@@ -1,0 +1,315 @@
+
+body {
+  text-align: center;
+  margin: auto;
+  padding-top: 120px;
+  line-height: 1.4;
+  background: black;
+overflow: hidden;
+filter: grayscale(20%);
+
+}
+
+
+
+::placeholder {
+  font-size: 18px;
+color: lightgray;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+div.content {
+margin-top: -20px;
+  align-items: center;
+  justify-content: center;
+
+}
+  input {
+  width: 38px;
+  border-radius: 7px; /*7px*/
+  box-shadow: inset -0.6px 1px 10px 0px rgba(0, 0, 0, 0.8);
+  border:  0.0008px solid rgba(30, 70, 60, 1);
+  padding: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 42px;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  text-shadow: -1px  1px 0.3px rgba(200, 200, 200, 0.5);
+  background: gray;
+  caret-color: rgba(200, 200, 200, 1);
+
+  }
+
+input.valid {
+background: rgba(120, 162, 120, 0.95);
+
+}
+
+input.sharp {
+  background: rgba(40, 112, 100, 0.95);
+}
+
+input.huge {
+  width: 122.3px;
+  background: rgba(95, 104, 150, 0.24);
+}
+
+.dy {
+  background: orange;
+}
+
+
+label {
+color: red;
+display: none;
+
+}
+#instrument {
+  display: none;
+}
+
+
+#Shift {
+  font-size: 12px;
+  height: 50px;
+  width: 313px;
+  font-size: 20px;
+  background: rgba(95, 104, 150, 0.24);
+  color: orange;
+  text-shadow: none;
+}
+
+
+
+.aardvark {
+display: none;
+}
+
+
+input.functionkey {
+  width: 40.3px;
+  height: 18px;
+  font-size: 12px;
+  background: rgba(95, 104, 150, 0.24);
+
+}
+
+
+
+
+input.functionkey::placeholder {
+  font-size: 12px;
+color: lightgray;
+}
+
+
+input.big {
+  width: 69px;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  transform: translate(0px, -2px);
+    background: rgba(95, 104, 150, 0.24);
+}
+input.bigger {
+  width: 87px;
+  font-size: 16px;
+transform: translate(0px, -2px);
+margin-left: 2px;
+margin-right: 4px;
+margin-top: 5px;
+margin-bottom: 5px;
+  background: rgba(95, 104, 150, 0.24);
+}
+
+
+div.bottom {
+
+}
+
+input.bottomstandard {
+width: 37.2px;
+height: 50px;
+  background: rgba(95, 104, 150, 0.24);
+
+}
+
+input.validbuthidden {
+  display: none;
+}
+
+input.burger {
+
+height: 42px;
+display: none;
+
+}
+
+input.angryhidden {
+
+  display: none;
+}
+
+input.happyhidden {
+
+  display: none;
+}
+
+.hummus {
+margin-left: 10px;
+padding: 20px;
+
+}
+
+div#faq {display: none; height: 100vh;
+  width: 100vw; color: rgba(180, 170, 160, 1); backgroun: rgba(180, 170, 160, 1); border-radius: 2px;position: fixed; left: 0vw; top: 0vh;
+text-align: left; overflow: scroll;
+
+
+
+}
+
+.dummus {
+  display: block;
+  width: calc(100% - 90px);
+  backgroun: rgba(150, 150, 140, 0.5);
+padding: 2px 2px 2px 10px;
+margin: 4px 10px 4px 35px;
+
+
+}
+
+ix {
+  font-style: italic;
+  color: gray;
+padding-left: 3px;
+}
+
+
+
+input#fn {
+
+  margin-left: 2px;
+}
+input.command {
+  width: 57px;
+  height: 50px;
+  background: rgba(95, 104, 150, 0.24);
+}
+
+input.arrow {
+  width: 36.7px;
+  height: 14px;
+  transform: translate(0px, 18px);
+    background: rgba(95, 104, 150, 0.24);
+}
+
+input#arrowtop {
+transform: translate(-69px, -17px) rotate(180deg);
+border-bottom: none;
+
+
+}
+
+#arrowtop::placeholder {
+
+transform: scaleX(0.5)  translate(0px, 5px);
+}
+
+#arrowbottom::placeholder {
+
+transform: scaleX(0.5) translate(0px, 5px);
+}
+
+
+#arrowleft::placeholder {
+
+transform: scaleX(0.75);
+}
+
+#arrowright::placeholder {
+
+transform: scaleX(0.75)  ;
+}
+input#arrowbottom {
+
+border-top: none;
+}
+
+
+input#arrowright {
+margin-left: -66px;
+transform: translate(0px, 18px);
+
+
+}
+#toosmall {
+  align-items: center;
+  justify-content: center;
+  padding: 3vw;
+  display: none;
+}
+
+span#widthcalc {
+  font-size: 2em;
+  color: blue;
+text-shadow: 0em 0.02em 0.08em white;
+}
+
+
+
+input.hidde {
+display: none;
+}
+
+
+
+@media (max-width: 1210px) {
+div.conten {
+  transform: scale(0.98);
+}
+}
+
+@media (max-width: 1050px) {
+div.conten {
+  transform: scale(0.96);
+}
+}
+
+
+input.hidden {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  html {
+  background: black;
+  }
+
+input {
+  display: none;
+
+}
+
+
+div.content {
+display: none;
+
+}
+
+#toosmall {
+  display: block;
+  color: white;
+  font-size: 30px;
+}
+}
