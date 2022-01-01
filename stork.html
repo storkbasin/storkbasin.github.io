@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Stork Basin</title>
+<link rel="stylesheet" href="/css/stork.css">
+  </head>
+
+
+
+  <body onresize="displAy(); cellO(); detunedorgaN(); seTopenbracket()" onload="displAy(); cellO(); detunedorgaN(); seTfour() ; seTfive() ; seTsix() ; seTthree() ; seTseven() ; seTeight();capCheck(); seTone() ; seTtwo() ;  seTd()
+  ; seTnine() ; seTzero() ; seTless(); seTq() ; seTw() ; seTs(); seTe() ; seTr() ; seTf(); seTt() ; seTg() ; seTy() ; seTh()
+  ; seTu() ; seTj() ; seTi() ; seTk() ; seTo() ; seTl() ; seTp() ; seTz() ; seTa(); seTx() ; seTc() ; seTv() ; seTb() ; seTn() ; seTm(); seTcomma(); " onkeydown="capCheck();" onclick="restoreSound()"
+
+
+
+onkeyup="seTe1right(); seTe1left(); seTw1right(); seTw1left()"
+
+onkeydown="seTr1left(); seTequals(); seTr1right(); seTe1left(); setTick()"
+
+
+  >
+
+  <h2 id="toosmall">You will need to enlarge your screen by at least <br><br> <span id="widthcalc"></span><br><br> if you want the visual elements of this site to work</h2>
+
+
+
+
+
+  <audio id="one">
+  <source  src="tones/ab-1.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="two">
+  <source  src="tones/bb-1.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="three">
+  <source  src="tones/.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="four">
+  <source  src="tones/cs.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="five">
+  <source  src="tones/eb.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="six">
+  <source  src="tones/.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="seven">
+  <source  src="tones/fs.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="eight">
+  <source  src="tones/ab.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="nine">
+  <source  src="tones/bb.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="zero">
+  <source  src="tones/.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="less">
+  <source  src="tones/cs1.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+  <audio id="comma">
+  <source  src="tones/eb1.mp3" type="audio/mp3">
+  Ein Fehler ist aufgetreten...
+  </audio>
+<audio id="a">
+<source  src="tones/ab-1maj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="b">
+<source  src="tones/emaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="c">
+<source  src="tones/cmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="d">
+<source  src="tones/.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="e">
+<source  src="tones/c.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="f">
+<source  src="tones/csmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="g">
+<source  src="tones/ebmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="h">
+<source  src="tones/.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="i">
+<source  src="tones/a.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="j">
+<source  src="tones/fsmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="k">
+<source  src="tones/abmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="l">
+<source  src="tones/bbmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="m">
+<source  src="tones/gmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="n">
+<source  src="tones/fmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="o">
+<source  src="tones/b.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="p">
+<source  src="tones/c1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="q">
+<source  src="tones/a-1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r">
+<source  src="tones/d.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="s">
+<source  src="tones/bb-1maj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="t">
+<source  src="tones/e.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="u">
+<source  src="tones/g.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="v">
+<source  src="tones/dmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="w">
+<source  src="tones/b-1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="x">
+<source  src="tones/b-1maj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="y">
+<source  src="tones/f.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="z">
+<source  src="tones/a-1maj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="tick">
+<source  src="tones/fs-1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+<audio id="r1right">
+<source  src="tones/.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r1left">
+<source  src="tones/.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r2left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r3left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r4left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r5left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r6left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r7left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="r8left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="q1right">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="w1left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="w1right">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="q1left">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="semicolon">
+<source  src="tones/.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="quote">
+<source  src="tones/cs1maj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+<audio id="demo">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+<audio id="openbracket">
+<source  src="tones/d1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+<audio id="closedbracket">
+<source  src="tones/e1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+<audio id="backslash">
+<source  src="tones/e1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+
+<audio id="slash">
+<source  src="tones/c1maj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+<audio id="punkt">
+<source  src="tones/bmaj.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+
+<audio id="equals">
+<source  src="tones/eb1.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+<audio id="r2right">
+<source  src="" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+<audio id="e1right">
+<source  src="tones/.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+<audio id="e1left">
+<source  src="tones/.mp3" type="audio/mp3">
+Ein Fehler ist aufgetreten...
+</audio>
+
+
+
+
+
+<div class="content" id="ttasl">
+
+
+
+
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q13leftconfig"type="text" name="" class="happyhidden" id="" onclick="" onblur="();" ondblclick="();" oninput=""value="C2maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q12leftconfig"type="text" name="" class="happyhidden" id="" onclick="" onblur="();" ondblclick="();" oninput=""value="C-2maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q11leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="D-2maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q10leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="E-2maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q9leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="F-2maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q8leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="G-2maj" placeholder="" >
+  <input style="background: rgba(120, 162, 120, 0.95);" id="Q7leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="A-2maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q6leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="B-2maj" placeholder="." >
+  <input style="background: rgba(120, 162, 120, 0.95);" id="Q5leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="C-1maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q4leftconfig"type="text" name="" class="happyhidden" id="dormant" onclick="();" onblur="();" ondblclick="();" value="D-1maj" placeholder="" >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q3leftconfig"type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="E-1maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);" id="Q2leftconfig" type="text" name="" class="happyhidden" id="" onclick="();" onblur="();" ondblclick="();" value="F-1maj" placeholder="." >
+  <input  style="background: rgba(120, 162, 120, 0.95);"  id="Q1leftconfig"type="text" name="" class="happyhidden" id="" onclick="iniTq1left();" onblur="rStoreq1left();" ondblclick="cleaRq1left();" oninput="seTq1left()" value="G-1maj" placeholder="." >
+
+
+
+<input id="E1leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="G-1" class="validbuthidden" type="text" name="" value="" onclick="iniTe1left()" onblur="rStoree1left()" oninput="seTe1left()" maxlength="7">
+<input id="E2leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="F-1" class="validbuthidden" type="text" name="" value="">
+<input id="E3leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="E-1" class="validbuthidden" type="text" name="" value="">
+<input id="E4leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="D-1" class="validbuthidden" type="text" name="" value="">
+<input id="E5leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="C-1" class="validbuthidden" type="text" name="" value="">
+<input id="E6leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="B-2" class="validbuthidden" type="text" name="" value="">
+<input id="E7leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="A-2" class="validbuthidden" type="text" name="" value="">
+<input id="E8leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="G-2" class="validbuthidden" type="text" name="" value="">
+<input id="E9leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="F-2" class="validbuthidden" type="text" name="" value="">
+<input id="E10leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="E-2" class="validbuthidden" type="text" name="" value="">
+<input id="E11leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="D-2" class="validbuthidden" type="text" name="" value="">
+<input id="E12leftconfig"  style="background: ; color: ; font-size: px; transform: none" value="C-2" class="validbuthidden" type="text" name="" value="">
+
+
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W13leftconfig"type="text" name="" class="angryhidden" id="" onclick="" onblur="();" ondblclick="();" oninput=""value="" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W12leftconfig"type="text" name="" class="angryhidden" id="" onclick="" onblur="();" ondblclick="();" oninput=""value="" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W11leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="Cs-2maj" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W10leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="Eb-2maj" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W9leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="." >
+<input  style="background: gray;" id="W8leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="Fs-2maj" placeholder="Fs-2maj" >
+<input style="background: rgba(40, 112, 100, 0.95);" id="W7leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="Ab-2maj" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W6leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="Bb-2maj" placeholder="." >
+<input style="background: rgba(40, 112, 100, 0.95);" id="W5leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="." >
+<input  style="background: gray;" id="W4leftconfig"type="text" name="" class="angryhidden" id="dormant" onclick="();" onblur="();" ondblclick="();" value="Cs-1maj" placeholder="" >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W3leftconfig"type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="Eb-1maj" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="W2leftconfig" type="text" name="" class="angryhidden" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="." >
+<input  style="background: gray;"  id="W1leftconfig"type="text" name="" class="angryhidden" id="" onclick="iniTw1left();" onblur="rStorew1left();" ondblclick="cleaRw1left();" oninput="seTw1left()" value="Fs-1maj" placeholder="." >
+
+
+
+  <input style="background: gray; color: none; font-size: 22px; transform: none;"  id="R1rightconfig"type="text" name="" class="burger" id="" onclick="iniTr1right();" onblur="rStorer1right();" ondblclick="cleaRr1right();" oninput="seTr1right()"value="" placeholder="." >
+  <input  style="background: rgba(40, 112, 100, 0.95);" id="R2rightconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Fs1" placeholder="." >
+
+  <input style="background: rgba(40, 112, 100, 0.95);"  id="R3rightconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Ab1" placeholder="." >
+  <input  style="background: rgba(40, 112, 100, 0.95);" id="R4rightconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Bb1" placeholder="." >
+  <input  style="background: black; color: none; opacity: 0; width:  0px;font-size: 22px; transform: none;"id="R5rightconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="." >
+
+
+<br>
+
+
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="Esc" value="?">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F1">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F2">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F3">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F4">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F5">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F6">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F7">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F8">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F9">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F10">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F11">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="F12">
+<input type="text" name="" class="functionkey" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="">
+
+
+  <script src="c.js"></script>
+<script src="tick.js"></script>
+
+
+<br>
+
+<input  style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 14px; transform: translate(0px, -2.2px); "  id="Tickconfig" type="text" name="" class="dormant" id="" onclick="iniTtick();" onblur="rStoretick();" ondblclick="cleaRtick();"
+oninput="seTtick();  this.value=removeSpaces(this.value);"value="Fs-1" placeholder="`" maxlength="7"onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+
+<input  style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 14px; transform: translate(0px, -2.2px); " id="Oneconfig"  placeholder="1" class="dormant" type="text" name="" onclick="iniTone();" ondblclick="cleaRone();" onblur="rStoreone();" oninput="seTone(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Ab-1" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="one.js"></script>
+<input  style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 14px; transform: translate(0px, -2px); "  id="Twoconfig"  placeholder="2" class="dormant" type="text" name="" onclick="iniTtwo();" ondblclick="cleaRtwo();" onblur="rStoretwo();" oninput="seTtwo(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Bb-1" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="two.js"></script>
+<input style="background: gray; "id="Threeconfig"  placeholder="3" class="dormant" type="text" name="" onclick="iniTthree();" ondblclick="cleaRthree();" onblur="rStorethree();" oninput="seTthree(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input  style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 22px; transform: translate(0px, 0px); " id="Fourconfig"  placeholder="4" class="dormant" type="text" name="" onclick="iniTfour();" ondblclick="cleaRfour();" onblur="rStorefour();" oninput="seTfour(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Cs" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 22px; transform: translate(0px, 0px); " id="Fiveconfig"  placeholder="5" class="dormant" type="text" name="" onclick="iniTfive();" ondblclick="cleaRfive();" onblur="rStorefive();" oninput="seTfive(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Eb" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Sixconfig"  placeholder="6" class="dormant" type="text" name="" onclick="iniTsix();" ondblclick="cleaRsix();" onblur="rStoresix();" oninput="seTsix(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 22px; transform: translate(0px, 0px); " id="Sevenconfig"  placeholder="7" class="dormant" type="text" name="" onclick="iniTseven();" ondblclick="cleaRseven();" onblur="rStoreseven();" oninput="seTseven(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Fs" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 22px; transform: translate(0px, 0px); " id="Eightconfig"  placeholder="8" class="dormant" type="text" name="" onclick="iniTeight();" ondblclick="cleaReight();" onblur="rStoreeight();" oninput="seTeight(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Ab" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 22px; transform: translate(0px, 0px); " id="Nineconfig"  placeholder="9" class="dormant" type="text" name="" onclick="iniTnine();" ondblclick="cleaRnine();" onblur="rStorenine();" oninput="seTnine(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Bb" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Zeroconfig"  placeholder="0" class="dormant" type="text" name="" onclick="iniTzero();" ondblclick="cleaRzero();" onblur="rStorezero();" oninput="seTzero(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 18.2px; transform: translate(0px, -2px); " id="Lessconfig"  placeholder="-" class="dormant" type="text" name="" onclick="iniTless();" ondblclick="cleaRless();" onblur="rStoreless();" oninput="seTless(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Cs1" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+
+<input style="background: rgba(40, 112, 100, 0.95); color: white; font-size: 18.2px; transform: translate(0px, -2px); " type="text" name="" class="dormant" id="Equalsconfig" onclick="iniTequals();" onblur="rStoreequals();" ondblclick="cleaRequals();"onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)"
+oninput="seTequals();  this.value=removeSpaces(this.value);"value="Eb1" maxlength="7" placeholder="=" >
+
+
+<input style="text-align: right;" type="text" name="" class="big" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="Delete">
+
+<br>
+
+<input style="text-align: left;" type="text" name="" class="big" disabled="true" id="" onclick="();" onblur="();" ondblclick="();" placeholder="Tab" value="">
+
+
+
+ <input  id="Qconfig" style="background: ; color: white; font-size: 18.2px; transform: translate(0px, -2px); " placeholder="Q" onclick="iniTq();" ondblclick="cleaRq();" onblur="rStoreq();" oninput="seTq(); this.value=removeSpaces(this.value);"  onblur="restoreSound()" onkeydown="blockSound()" class="valid" type="text" name="" maxlength="7"  onfocus="cLear();" value="A-1" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/q.js"></script>
+<input id="Wconfig" style="background: ; color: white; font-size: 18.2px; transform: translate(0px, -2px); " placeholder="W" onload="assignPitches()" onclick="iniTw();" ondblclick="cleaRw();" onblur="rStorew();" oninput="seTw();  this.value=removeSpaces(this.value);"  onblur="restoreSound()" onkeydown="blockSound()"class="valid" type="text" name="" maxlength="7" value="B-1" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/w.js"></script>
+<input id="Econfig"  placeholder="E" onclick="iniTe();" ondblclick="cleaRe();" onblur="rStoree();" oninput="seTe(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7"  onblur="restoreSound()" onkeydown="blockSound()"  onfocus="cLear();" value="C" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/e.js"></script>
+<input id="Rconfig"  placeholder="R" onclick="iniTr();" ondblclick="cleaRr();" onblur="rStorer();" oninput="seTr(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7" onblur="restoreSound()" onkeydown="blockSound()" onfocus="cLear();" value="D" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/r.js"></script>
+<input id="Tconfig"  placeholder="T" onclick="iniTt();" ondblclick="cleaRt();" onblur="rStoret();" oninput="seTt(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7" onblur="restoreSound()" onkeydown="blockSound()"onfocus="cLear();" value="E" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/t.js"></script>
+<input id="Yconfig"  placeholder="Y" onclick="iniTy();" ondblclick="cleaRy();" onblur="rStorey();" oninput="seTy(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7" onblur="restoreSound()" onkeydown="blockSound()"onfocus="cLear();" value="F" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/y.js"></script>
+<input id="Uconfig"  placeholder="U" onclick="iniTu();" ondblclick="cleaRu();" onblur="rStoreu();" oninput="seTu(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7"  onblur="restoreSound()" onkeydown="blockSound()"onfocus="cLear();" value="G" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/u.js"></script>
+<input id="Iconfig"  placeholder="I" onclick="iniTi();" ondblclick="cleaRi();" onblur="rStorei();" oninput="seTi(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7" onblur="restoreSound()" onkeydown="blockSound()"onfocus="cLear();" value="A" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/i.js"></script>
+<input id="Oconfig"  placeholder="O" onclick="iniTo();" ondblclick="cleaRo();" onblur="rStoreo();" oninput="seTo(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7" onblur="restoreSound()" onkeydown="blockSound()"  onfocus="cLear();" value="B" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/o.js"></script>
+<input id="Pconfig"  placeholder="P" onclick="iniTp();" ondblclick="cleaRp();" onblur="rStorep();" oninput="seTp(); this.value=removeSpaces(this.value);" class="valid" type="text" name="" maxlength="7"  onblur="restoreSound()" onkeydown="blockSound()"  onfocus="cLear();" value="C1" maxlength="7" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/p.js"></script>
+
+
+<input type="text" name="" maxlength="7" class="valid" id="Openbracketconfig" onclick="iniTopenbracket();" onblur="rStoreopenbracket();" ondblclick="cleaRopenbracket();" oninput="seTopenbracket(); this.value=removeSpaces(this.value);" value="D1" placeholder="[" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input type="text" name=""maxlength="7"  class="valid" id="Closedbracketconfig" onclick="iniTclosedbracket();" onblur="rStoreclosedbracket();" ondblclick="cleaRclosedbracket();" oninput="seTclosedbracket(); this.value=removeSpaces(this.value);" value="E1" placeholder="]" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input style="background: ;" type="text" name="" maxlength="7" class="valid" id="Backslashconfig" onclick="iniTbackslash();" onblur="rStorebackslash();" ondblclick="cleaRbackslash();" oninput="seTbackslash(); this.value=removeSpaces(this.value); "value="F1" placeholder="\" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+
+
+<br>
+
+<input style="text-align: left;" type="text" name="" class="bigger" id="Caps" onclick="();" onblur="();" ondblclick="();" disabled="true" placeholder="Caps Lock" value="" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+
+
+
+
+
+
+
+
+<input style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 8px; transform: translate(0px, -4px);" id="Aconfig"  placeholder="A" onload="assignPitches()" onclick="iniTa();" ondblclick="cleaRa();" onblur="rStorea();" oninput="seTa(); this.value=removeSpaces(this.value);" class="valid"
+type="text" name="" maxlength="7"  onfocus="cLear();" value="Ab-1maj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/a.js"></script>
+<input style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 8px; transform: translate(0px, -4px);" id="Sconfig"  placeholder="S" class="valid" type="text" name="" onclick="iniTs();" ondblclick="cleaRs();" onblur="rStores();" oninput="seTs(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Bb-1maj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/s.js"></script>
+<input style="background: gray;" id="Dconfig"  placeholder="D" class="valid" type="text" name="" onclick="iniTd();" ondblclick="cleaRd();" onblur="rStored();" oninput="seTd(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/d.js"></script>
+<input style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 11.5px; transform: translate(0px, -3px);"id="Fconfig"  placeholder="F" class="valid" type="text" name="" onclick="iniTf();" ondblclick="cleaRf();" onblur="rStoref();" oninput="seTf(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Csmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/f.js"></script>
+<input style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 11.5px; transform: translate(0px, -3px);"id="Gconfig"  placeholder="G" class="valid" type="text" name="" onclick="iniTg();" ondblclick="cleaRg();" onblur="rStoreg();" oninput="seTg(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Ebmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/g.js"></script>
+<input style="background: gray;" id="Hconfig"  placeholder="H" class="valid" type="text" name="" onclick="iniTh();" ondblclick="cleaRh();" onblur="rStoreh();" oninput="seTh(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/h.js"></script>
+<input style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 11.5px; transform: translate(0px, -3px);"id="Jconfig"  placeholder="J" class="valid" type="text" name="" onclick="iniTj();" ondblclick="cleaRj();" onblur="rStorej();" oninput="seTj(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Fsmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/j.js"></script>
+<input style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 11.5px; transform: translate(0px, -3px);"id="Kconfig"  placeholder="K" class="valid" type="text" name="" onclick="iniTk();" ondblclick="cleaRk();" onblur="rStorek();" oninput="seTk(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Abmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<script src="/js/k.js"></script>
+<input style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 11.5px; transform: translate(0px, -3px);"id="Lconfig"  placeholder="L" class="valid" type="text" name="" onclick="iniTl();" ondblclick="cleaRl();" onblur="rStorel();" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)"
+oninput="seTl(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Bbmaj" >
+<script src="/js/l.js"></script>
+
+<input style="background: gray; "id="Semicolonconfig" maxlength="7" type="text" name="" class="dormant" id="" onclick="iniTsemicolon();" onblur="rStoresemicolon();" ondblclick="cleaRsemicolon();" oninput="seTsemicolon(); this.value=removeSpaces(this.value);"value="" placeholder=";" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Quoteconfig" style="background: rgba(40, 112, 100, 0.95); color: brown; font-size: 9.6px; transform: translate(0px, -4px);" type="text" name="" class="dormant" id="" onclick="iniTquote();" onblur="rStorequote();" ondblclick="cleaRquote();" oninput="seTquote();  this.value=removeSpaces(this.value);"value="Cs1maj" placeholder="'" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)" maxlength="7">
+
+<input style="text-align: right;" type="text" name="" class="bigger" id="" onclick="();" onblur="();" ondblclick="();" disabled="true" placeholder="Return">
+
+
+<br>
+
+
+<input style="text-align: left;" type="text" name="" class="huge" id="shift1" onclick="();" onblur="();" ondblclick="();" value="" disabled="true" placeholder="Shift">
+
+<input  id="Zconfig"  placeholder="Z" style="background: ; color: brown; font-size: 9.6px; transform: translate(0px, -4px); " class="valid" type="text" name="" onclick="iniTz();" ondblclick="cleaRz();" onblur="rStorez();" oninput="seTz(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="A-1maj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Xconfig"  placeholder="X" style="background: ; color: brown; font-size: 9.6px; transform: translate(0px, -4px); "  class="valid" type="text" name="" onclick="iniTx();" ondblclick="cleaRx();" onblur="rStorex();" oninput="seTx(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="B-1maj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Cconfig"  placeholder="C" style="background: ; color: brown; font-size: 14px; transform: translate(0px, -2.2px); " class="valid" type="text" name="" onclick="iniTc();" ondblclick="cleaRc();" onblur="rStorec();" oninput="seTc(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Cmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+
+<input id="Vconfig"  placeholder="V"  style="background: ; color: brown; font-size: 14px; transform: translate(0px, -2.2px); " class="valid" type="text" name="" onclick="iniTv();" ondblclick="cleaRv();" onblur="rStorev();" oninput="seTv(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Dmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Bconfig"  placeholder="B"  style="background: ; color: brown; font-size: 14px; transform: translate(0px, -2.2px); " class="valid" type="text" name="" onclick="iniTb();" ondblclick="cleaRb();" onblur="rStoreb();" oninput="seTb(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Emaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Nconfig"  placeholder="N"  style="background: ; color: brown; font-size: 14px; transform: translate(0px, -2.2px); " class="valid" type="text" name="" onclick="iniTn();" ondblclick="cleaRn();" onblur="rStoren();" oninput="seTn(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Fmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Mconfig"  placeholder="M"  style="background: ; color: brown; font-size: 14px; transform: translate(0px, -2.2px); " class="valid" type="text" name="" onclick="iniTm();" ondblclick="cleaRm();" onblur="rStorem();" oninput="seTm(); this.value=removeSpaces(this.value);"maxlength="7"  onfocus="cLear();" value="Gmaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input id="Commaconfig"  placeholder=","  style="background: ; color: brown; font-size: 14px; transform: translate(0px, -2.2px); " class="valid" type="text" name="" onclick="iniTcomma();" ondblclick="cleaRcomma();" onblur="rStorecomma();" oninput="seTcomma(); this.value=removeSpaces(this.value);"maxlength="Amaj" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)"
+ onfocus="cLear();" value="Amaj">
+
+<input type="text" name=""  style="background: ; color: brown; font-size: 14px; transform: translate(0px, -2.2px); " class="valid" id="Punktconfig" onclick="iniTpunkt();" onblur="rStorepunkt();" ondblclick="cleaRpunkt();" oninput="seTpunkt();  this.value=removeSpaces(this.value);"value="Bmaj" placeholder="." onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+<input type="text" name=""  style="background: ; color: brown; font-size: 11.5px; transform: translate(0px, -3px); " class="valid" id="Slashconfig" onclick="iniTslash();" onblur="rStoreslash();" ondblclick="cleaRslash();" oninput="seTslash();  this.value=removeSpaces(this.value);"value="C1maj" placeholder="/" onkeypress="return /[abcdefgijmnosux712-]/i.test(event.key)">
+
+<input style="text-align: right;" type="text" name="" class="huge" id="shift2" onclick="();" onblur="();" ondblclick="();" value="" placeholder="Shift" disabled="">
+
+
+
+<div class="bottom">
+
+<input style="text-align: left;" type="text" name="" class="bottomstandard" id="fn" onclick="();" onblur="();" ondblclick="();" value="" placeholder="Fn" disabled="">
+<input style="text-align: left;"type="text" name="" class="bottomstandard" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="Ctr" disabled="">
+<input style="text-align: left;"type="text" name="" class="bottomstandard" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="Opt" disabled="">
+<input style="text-align: left;"type="text" name="" class="command" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="Cmd" disabled="">
+
+<input  style="" id="Shift"  placeholder="Shift" class="center" type="text" name="" onclick="iniTshift();" ondblclick="cleaRshift();" onblur="rStoreshift();"
+value="Cello" placeholder="Space" disabled="true" onclick="shiftSOw()">
+
+<input style="text-align: right;" type="text" name="" class="command" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="Cmd" disabled="">
+<input style="text-align: right;" type="text" name="" class="bottomstandard" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="Opt" disabled="">
+
+<input type="text" name="" placeholder="<" class="arrow" id="arrowleft" onclick="();" onblur="();" ondblclick="();" value="" disabled="">
+<input type="text" name="" placeholder="﹀" class="arrow"  id="arrowbottom" onclick="();" onblur="();" ondblclick="();" value="" disabled="">
+<input  type="text" name="" placeholder="﹀" class="arrow" id="arrowtop" onclick="();" onblur="();" ondblclick="();" value="" disabled="">
+<input type="text" name="" placeholder=">" class="arrow" id="arrowright" onclick="();" onblur="();" ondblclick="();" value="" disabled="">
+
+
+
+
+
+
+</div>
+
+
+<script src="/js/r1left.js"></script>
+<script src="/js/changesystems.js"></script>
+
+
+<input style="background: orange; display: none" id="Colorchange" type="text" name="" value="Cmaj">
+
+
+
+
+
+<input id="Q1rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="D1maj" class="happyhidden" type="text" name="" value="" onclick="iniTq1right()" oninput="seTq1right()">
+<input id="Q2rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="E1maj" class="happyhidden" type="text" name="" value="">
+<input id="Q3rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="F1maj" class="happyhidden" type="text" name="" value="">
+<input id="Q4rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="G1maj" class="happyhidden" type="text" name="" value="">
+<input id="Q5rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="A1maj" class="happyhidden" type="text" name="" value="">
+<input id="Q6rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="B1maj" class="happyhidden" type="text" name="" value="">
+<input id="Q7rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="C2maj" class="happyhidden" type="text" name="" value="">
+<input id="Q8rightconfig"  style="background: rgba(120, 162, 120, 0.95); color: ; font-size: 22px; transform: none" value="C2maj" class="happyhidden" type="text" name="" value="">
+
+
+
+
+
+
+
+
+
+<!--Third row hidden keys (completed)-->
+
+<input id="W1rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="Eb1maj" class="angryhidden" type="text" name="" value="" onclick="iniTw1right()" oninput="seTw1right()">
+<input id="W2rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="" class="angryhidden" type="text" name="" value="">
+<input id="W3rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="Fs1maj" class="angryhidden" type="text" name="" value="">
+<input id="W4rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="Ab1maj" class="angryhidden" type="text" name="" value="">
+<input id="W5rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="Bb1maj" class="angryhidden" type="text" name="" value="">
+<input id="W6rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="" class="angryhidden" type="text" name="" value="">
+
+
+
+
+
+
+<!--Second row hidden keys (completed)-->
+
+<input id="E1rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="G1" class="validbuthidden" type="text" name="" value="" onclick="iniTe1right()" oninput="seTe1right()">
+<input id="E2rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="A1" class="validbuthidden" type="text" name="" value="">
+<input id="E3rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="B1" class="validbuthidden" type="text" name="" value="">
+<input id="E4rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="C2" class="validbuthidden" type="text" name="" value="">
+<input id="E5rightconfig"  style="background: ; color: ; font-size: 22px; transform: none" value="" class="validbuthidden" type="text" name="" value="">
+
+
+
+
+
+
+
+<!--Top row hidden keys (completed)-->
+
+<input  style="background: rgba(40, 112, 100, 0.95);" id="R12leftconfig"type="text" name="" class="burger" id="" onclick="" onblur="();" ondblclick="();" oninput=""value="" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="R11leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="R10leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Cs-2" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="R9leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Eb-2" placeholder="." >
+<input  style="background: gray;" id="R8leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="" placeholder="." >
+<input style="background: rgba(40, 112, 100, 0.95);" id="R7leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Fs-2" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="R6leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Ab-2" placeholder="." >
+<input style="background: rgba(40, 112, 100, 0.95);" id="R5leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Bb-2" placeholder="." >
+<input  style="background: gray;" id="R4leftconfig"type="text" name="" class="burger" id="dormant" onclick="();" onblur="();" ondblclick="();" value="" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="R3leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Cs-1" placeholder="." >
+<input  style="background: rgba(40, 112, 100, 0.95);" id="R2leftconfig"type="text" name="" class="burger" id="" onclick="();" onblur="();" ondblclick="();" value="Eb-1" placeholder="." >
+<input  style="background: gray;"  id="R1leftconfig"type="text" name="" class="burger" id="" onclick="iniTr1left();" onblur="rStorer1left();" ondblclick="cleaRr1left();" oninput="seTr1left()" value="" placeholder="." >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<label for="">Cello</label>
+<input type="radio" name="inst" class="aardvark" checked="true" id="cello" onclick="cellO();  seTa(); seTb(); seTr(); seTw();">
+
+
+<label for="">Detuned Organ</label>
+<input type="radio" name="inst"class="aardvark" id="detunedorgan" onclick="detunedorgaN(); seTa(); seTb(); seTr(); seTw();">
+
+<input id="instrument"  type="text" name="" value="tones">
+
+
+
+
+<!--  Invisible -->
+
+
+<!--important-->
+<input id="tempvalstore" class="hidden"type="text" name="" value="">
+
+<input id="tempbackgstore" class="hidden"type="text" name="" value="">
+
+
+<input id="tempspeedstore" type="text" class="hidden" name="" value="0.75">
+
+
+<input id="e1lefttrigger"type="text" name="" class="hidde"value="" onclick="seTe1left()">
+
+<input id="r1righttrigger"type="text" name="" class="hidde"value="" onclick="seTr1right()">
+<input id="r1lefttrigger"type="text" name="" class="hidde"value="" onclick="seTr1left()">
+<input id="ticktrigger"type="text" name="" class="hidde"value="" onclick="seTtick()">
+<input id="onetrigger"type="text" name="" class="hidde"value="" onclick="seTone()">
+<input id="twotrigger"type="text" name="" class="hidde"value="" onclick="seTtwo()">
+<input id="threetrigger"type="text" name="" class="hidde"value="" onclick="seTthree()">
+<input id="fourtrigger"type="text" name="" class="hidde"value="" onclick="seTfour()">
+<input id="fivetrigger"type="text" name="" class="hidde"value="" onclick="seTfive()">
+<input id="sixtrigger"type="text" name="" class="hidde"value="" onclick="seTsix()">
+<input id="seventrigger"type="text" name="" class="hidde"value="" onclick="seTseven()">
+<input id="eighttrigger"type="text" name="" class="hidde"value="" onclick="seTeight()">
+<input id="ninetrigger"type="text" name="" class="hidde"value="" onclick="seTnine()">
+<input id="zerotrigger"type="text" name="" class="hidde"value="" onclick="seTzero()">
+<input id="lesstrigger"type="text" name="" class="hidde"value="" onclick="seTless()">
+<input id="equalstrigger"type="text" name="" class="hidde"value="" onclick="seTequals()">
+<input id="punkttrigger"type="text" name="" class="hidde"value="" onclick="seTpunkt()">
+
+<input id="qtrigger"type="text" name="" class="hidde"value="" onclick="seTq()">
+<input id="wtrigger"type="text" name="" class="hidde"value="" onclick="seTw()">
+<input id="etrigger"type="text" name="" class="hidde"value="" onclick="seTe()">
+<input id="rtrigger"type="text" name="" class="hidde"value="" onclick="seTr()">
+<input id="ttrigger"type="text" name="" class="hidde"value="" onclick="seTt()">
+<input id="ytrigger"type="text" name="" class="hidde"value="" onclick="seTy()">
+<input id="utrigger"type="text" name="" class="hidde"value="" onclick="seTu()">
+<input id="itrigger"type="text" name="" class="hidde"value="" onclick="seTi()">
+<input id="otrigger"type="text" name="" class="hidde"value="" onclick="seTo()">
+<input id="ptrigger"type="text" name="" class="hidde"value="" onclick="seTp()">
+<input id="openbrackettrigger"type="text" name="" class="hidde"value="" onclick="seTopenbracket()">
+<input id="closedbracketrigger"type="text" name="" class="hidde"value="" onclick="seTclosedbracket()">
+<input id="backslashtrigger"type="text" name="" class="hidde"value="" onclick="seTbackslash()">
+
+
+<input id="atrigger"type="text" name="" class="hidde"value="" onclick="seTa()">
+<input id="strigger"type="text" name="" class="hidde"value="" onclick="seTs()">
+<input id="dtrigger"type="text" name="" class="hidde"value="" onclick="seTd()">
+<input id="ftrigger"type="text" name="" class="hidde"value="" onclick="seTf()">
+<input id="gtrigger"type="text" name="" class="hidde"value="" onclick="seTg()">
+<input id="htrigger"type="text" name="" class="hidde"value="" onclick="seTh()">
+<input id="jtrigger"type="text" name="" class="hidde"value="" onclick="seTj()">
+<input id="ktrigger"type="text" name="" class="hidde"value="" onclick="seTk()">
+<input id="ltrigger"type="text" name="" class="hidde"value="" onclick="seTl()">
+<input id="semicolontrigger"type="text" name="" class="hidde"value="" onclick="seTsemicolon()">
+<input id="quotetrigger"type="text" name="" class="hidde"value="" onclick="seTquote()">
+
+
+<input id="ztrigger"type="text" name="" class="hidde"value="" onclick="seTz()">
+<input id="xtrigger"type="text" name="" class="hidde"value="" onclick="seTx()">
+<input id="ctrigger"type="text" name="" class="hidde"value="" onclick="seTc()">
+<input id="vtrigger"type="text" name="" class="hidde"value="" onclick="seTv()">
+<input id="btrigger"type="text" name="" class="hidde"value="" onclick="seTb()">
+<input id="ntrigger"type="text" name="" class="hidde"value="" onclick="seTn()">
+<input id="mtrigger"type="text" name="" class="hidde"value="" onclick="seTm()">
+<input id="commatrigger"type="text" name="" class="hidde"value="" onclick="seTcomma()">
+<input id="punktrigger"type="text" name="" class="hidde"value="" onclick="seTpunkt()">
+<input id="slashtrigger"type="text" name="" class="hidde"value="" onclick="seTslash()">
+
+
+<input id="w1righttrigger"type="text" name="" class="hidde"value="" onclick="seTw1right()">
+<input id="w1lefttrigger"type="text" name="" class="hidde"value="" onclick="seTw1left()">
+<input id="q1righttrigger"type="text" name="" class="hidde"value="" onclick="seTq1right()">
+<input id="q1lefttrigger"type="text" name="" class="hidde"value="" onclick="seTq1left()">
+
+<input id="e1righttrigger"type="text" name="" class="hidde"value="" onclick="seTe1right()">
+
+
+<input style="display: none;" id="functiontrigger" type="button" name="" value="" onclick="seTr1left(); seTr1right(); seTe1left();">
+
+</div>
+<noscript>
+  <h3>This site consists primarily of Javascript...</h3>
+  <h4>You should consider enabling it</h4>
+
+</noscript>
+
+
+<script src="/js/stork.js">
+
+  </script>
+
+
+
+
+  <script src="/js/z.js"></script>
+  <script src="/js/x.js"></script>
+
+  <script src="/js/v.js"></script>
+  <script src="/js/b.js"></script>
+  <script src="/js/n.js"></script>
+  <script src="/js/m.js"></script>
+  <script src="/js/comma.js"></script>
+
+  <script src="/js/openbracket.js"></script>
+  <script src="/js/closedbracket.js"></script>
+
+  <script src="/js/punkt.js"></script>
+  <script src="/js/slash.js"></script>
+  <script src="/js/backslash.js"></script>
+  <script src="/js/equals.js"></script>
+  <script src="/js/semicolon.js"></script>
+
+
+  <script src="/js/three.js"></script>
+  <script src="/js/four.js"></script>
+  <script src="/js/five.js"></script>
+  <script src="/js/six.js"></script>
+  <script src="/js/seven.js"></script>
+  <script src="/js/eight.js"></script>
+  <script src="/js/nine.js"></script>
+  <script src="/js/zero.js"></script>
+  <script src="/js/less.js"></script>
+
+  <script src="/js/preset.js"></script>
+  <script src="/js/outerkeys.js"></script>
+  <script src="/js/changenotevalues.js"></script>
+  <script src="/js/changechordvalues.js"></script>
+  <script src="/js/changehiddenkey.js"></script>
+
+
+  <script src="/js/deletenote.js"></script>
+
+
+
+
+
+
+<script src="/js/quote.js"></script>
+<script src="/js/r1right.js"></script>
+<script src="/js/e1right.js"></script>
+<script src="/js/e1left.js"></script>
+
+<script src="/js/w1right.js"></script>
+<script src="/js/w1left.js"></script>
+
+<script src="/js/q1right.js"></script>
+<script src="/js/q1left.js"></script>
+
+<div style="" id="faq" href="faq.md">
+<!--<h2 class="hummus">About this site and how to use it...</h2>-->
+<p class="hummus" style="">As you have probably figured out by this point, this program is set up to be navigated almost entirely by keyboard. If you are on a mobile device (which is unlikely given that you were able to get to this popup), most features
+  will not work.</p>
+  <h3 class="hummus">Here is a brief summary of what each keyboard key is supposed to do: </h3>
+  <sa class="dummus">1 &nbsp<ix>play Ab below above middle C</ix></sa>
+  <sa class="dummus">2 &nbsp<ix>play Bb below middle C</ix></sa>
+  <sa class="dummus">3 &nbsp<ix>nothing</ix></sa>
+  <sa class="dummus">4 &nbsp<ix>play C# above middle C</ix></sa>
+  <sa class="dummus">5 &nbsp<ix>play Eb above above middle C</ix></sa>
+  <sa class="dummus">6 &nbsp<ix>nothing</ix></sa>
+  <sa class="dummus">7 &nbsp<ix>play F# above middle C</ix></sa>
+  <sa class="dummus">8 &nbsp<ix>play Ab above middle C</ix></sa>
+  <sa class="dummus">9 &nbsp<ix>play Bb above middle C</ix></sa>
+  <sa class="dummus">0 &nbsp<ix>nothing</ix></sa>
+<sa class="dummus">A &nbsp<ix>play Ab major chord below middle C</ix></sa>
+<sa class="dummus">B &nbsp<ix>play Bb major chord below middle C</ix></sa>
+<sa class="dummus">C &nbsp<ix>play middle C major chord</ix></sa>
+<sa class="dummus">D &nbsp<ix>nothing</ix></sa>
+<sa class="dummus">E &nbsp<ix>play middle C</ix></sa>
+<sa class="dummus">F &nbsp<ix>play C# major chord above middle C</ix></sa>
+<sa class="dummus">G &nbsp<ix>play Eb major chord above middle C</ix></sa>
+<sa class="dummus">H &nbsp<ix>nothing</ix></sa>
+<sa class="dummus">I &nbsp<ix>play A above middle C</ix></sa>
+<sa class="dummus">J &nbsp<ix>play F# major chord above middle C</ix></sa>
+<sa class="dummus">K &nbsp<ix>play Ab major chord above middle C</ix></sa>
+<sa class="dummus">L &nbsp<ix>play Bb major chord above middle C</ix></sa>
+<sa class="dummus">M &nbsp<ix>play G major chord above middle C</ix></sa>
+<sa class="dummus">N &nbsp<ix>play F major chord above middle C</ix></sa>
+<sa class="dummus">O &nbsp<ix>play B above middle C</ix></sa>
+<sa class="dummus">P &nbsp<ix>play C above middle C</ix></sa>
+<sa class="dummus">Q &nbsp<ix>play A below middle C</ix></sa>
+<sa class="dummus">R &nbsp<ix>play D above middle C</ix></sa>
+<sa class="dummus">S &nbsp<ix>play Bb major chord below middle C</ix></sa>
+<sa class="dummus">T &nbsp<ix>play E above middle C</ix></sa>
+<sa class="dummus">U &nbsp<ix>play G above middle C</ix></sa>
+<sa class="dummus">V &nbsp<ix>play D major chord above middle C</ix></sa>
+<sa class="dummus">W &nbsp<ix>play B below middle C</ix></sa>
+<sa class="dummus">X &nbsp<ix>play B Major chord below middle C</ix></sa>
+<sa class="dummus">Y &nbsp<ix>play F above middle C</ix></sa>
+<sa class="dummus">Z &nbsp<ix>play A major chord below middle C</ix></sa>
+
+<br>
+
+</div>
+
+
+<input style="display: none; background: blue" id="anotherhiddeninput" type="text" class="hidden" name="" value="" onclick="displAy(); stopTwinkle()">
+
+</body>
+
+</html>
