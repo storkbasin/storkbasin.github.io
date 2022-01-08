@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Jitsi Instances</title>
     <style media="screen">
+    body {
+      background: black;
+      color: white;
+    }
       div.table {
-
-
         width: 100%;
         overflow: scroll;
       }
@@ -15,9 +17,9 @@
         background: lightyellow;
         color: black;
 overflow-x: auto;
-  transform: scalex(0.85);
-
-  margin-left: -4vw;
+margin: auto;
+font-size: 14px;
+border-radius: 5px;
 
       }
       body::-webkit-scrollbar {
@@ -30,7 +32,7 @@ overflow-x: auto;
       td {
       border: 0.01vw solid blue;
           padding: 0.3vw;
-          max-width: 5.5vw;
+          max-width: 4.5vw;
           overflow: auto;
           overflow-wrap: break-word;
 
@@ -67,7 +69,7 @@ overflow-x: auto;
     <table>
       <tr>
         <td>Hoster</td>
-        <td>Url</td>
+        <td>URL</td>
         <td>Requires Login or Subscription</td>
         <td>Requires Cookies</td>
         <td>Connection Speed</td>
@@ -89,7 +91,7 @@ overflow-x: auto;
 
       <tr>
       <td>Red de Interconexion Universitaria</td>
-      <td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+      <td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
         https://jitsi.unp.edu.ar</td>
         <td></td>
         <td></td>
@@ -110,7 +112,7 @@ overflow-x: auto;
 
 <tr>
 <td>University of Innsbruck</td>
-<td onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">https://easyconference.uibk.ac.at</td>
+<td class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">https://easyconference.uibk.ac.at</td>
 <td></td>
 <td></td>
 <td>Allegretto</td>
@@ -131,7 +133,7 @@ overflow-x: auto;
 
 <tr>
 <td>Nessus GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.epicenter.works</td>
   <td></td>
   <td></td>
@@ -152,7 +154,7 @@ overflow-x: auto;
 
 <tr>
 <td></td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://fairmeeting.net</td>
   <td></td>
   <td></td>
@@ -173,7 +175,7 @@ overflow-x: auto;
 
 <tr>
 <td></td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://pro.fairmeeting.net</td>
   <td>Yes</td>
   <td>Yes</td>
@@ -194,7 +196,7 @@ overflow-x: auto;
 
 <tr>
 <td></td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.graz.social</td>
   <td></td>
   <td></td>
@@ -215,7 +217,7 @@ overflow-x: auto;
 
 <tr>
 <td>Navek Soft & Mobile Service LTD</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.naveksoft.com</td>
 <td></td>
 <td>Yes</td>
@@ -241,7 +243,7 @@ https://www.youtube.com/youtubei/v1/log_event?">5 </lot>/<lot title="https://www
 
 <tr>
 <td>BELNET</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi-1.belnet.be</td>
 <td></td>
 <td></td>
@@ -262,7 +264,7 @@ https://www.youtube.com/youtubei/v1/log_event?">5 </lot>/<lot title="https://www
 
 <tr>
 <td></td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://praatbox.be</td>
   <td></td>
   <td>Yes</td>
@@ -285,7 +287,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Futruy s.r.o.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.ssps.cz</td>
 <td></td>
 <td></td>
@@ -306,7 +308,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Master Internet s.r.o.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.vpsfree.cz</td>
   <td></td>
   <td></td>
@@ -328,7 +330,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>UpCloud Ltd</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.riot.im</td>
   <td></td>
   <td></td>
@@ -352,7 +354,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>ILOTH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://allo.bim.land</td>
   <td></td>
   <td></td>
@@ -373,7 +375,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://blabla.dedidream.com</td>
   <td></td>
   <td></td>
@@ -396,7 +398,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Bouygues Telecom SA</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://conf.underworld.fr</td>
   <td></td>
   <td></td>
@@ -417,7 +419,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.kbu.freifunk.net</td>
   <td></td>
   <td></td>
@@ -438,7 +440,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://suricate.tv</td>
   <td></td>
   <td>Yes</td>
@@ -459,7 +461,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jump.chat</td>
   <td></td>
   <td>Yes</td>
@@ -480,7 +482,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Association GRIFON</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://framatalk.grifon.fr</td>
   <td></td>
   <td></td>
@@ -501,7 +503,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.cheezecake.ovh</td>
   <td></td>
   <td></td>
@@ -522,7 +524,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Grenode</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.hadoly.fr</td>
   <td></td>
   <td></td>
@@ -543,7 +545,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hivane</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.hivane.net</td>
   <td></td>
   <td></td>
@@ -564,7 +566,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>MilkyWan</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.milkywan.fr</td>
   <td></td>
   <td></td>
@@ -585,7 +587,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>NXT Initiative SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.nextmap.io</td>
   <td></td>
   <td></td>
@@ -606,7 +608,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.q2r.net</td>
   <td></td>
   <td></td>
@@ -627,7 +629,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Tetaneutral.net</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.tetaneutral.net</td>
   <td></td>
   <td></td>
@@ -648,7 +650,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Tetaneutral.net</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.videodulib.re</td>
   <td></td>
   <td></td>
@@ -669,7 +671,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td></td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.artifaille.fr</td>
   <td></td>
   <td>Yes</td>
@@ -690,7 +692,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>OVH SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.digdeo.fr</td>
   <td></td>
   <td></td>
@@ -711,7 +713,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Evolix SARL</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.evolix.org</td>
   <td></td>
   <td></td>
@@ -732,7 +734,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Oceanet Technology SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.lenalio.fr</td>
   <td></td>
   <td></td>
@@ -753,7 +755,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Netrix SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.nevers-libre.org</td>
   <td></td>
   <td>Yes</td>
@@ -774,7 +776,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.tedomum.net</td>
   <td></td>
   <td></td>
@@ -795,7 +797,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>OVH SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   http://meet.yapbreak.fr</td>
   <td></td>
   <td></td>
@@ -819,7 +821,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.debamax.com</td>
   <td></td>
   <td></td>
@@ -840,7 +842,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Association Gitoyen</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://talk.fdn.fr</td>
   <td></td>
   <td></td>
@@ -866,7 +868,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Bouygues Telecom SA</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://video.devloprog.org</td>
   <td></td>
   <td></td>
@@ -887,7 +889,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>OVH SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://video.omicro.org</td>
   <td></td>
   <td></td>
@@ -908,7 +910,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>OVH SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.komuniki.fr</td>
   <td></td>
   <td></td>
@@ -929,7 +931,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Online S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://visio.lafranceinsoumise.fr</td>
   <td></td>
   <td></td>
@@ -951,7 +953,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Axione S.a.s.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://webcall.paulla.asso.fr</td>
   <td></td>
   <td></td>
@@ -973,7 +975,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>OVH SAS</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://webconf.viviers-fibre.net</td>
   <td></td>
   <td></td>
@@ -994,11 +996,34 @@ https://api.amplitude.com/"> 1</lot>
 
 
 
+<tr>
+<td>Freifunk München</td>
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
+  https://meet.ffmuc.net/</td>
+  <td></td>
+  <td></td>
+  <td>Moderato</td>
+  <td>0 / 0</td>
+  <td>✅</td>
+  <td>✅</td>
+  <td>✅📞</td>
+  <td>✅</td>
+  <td>☑️</td>
+  <td>☑️</td>
+  <td>✅</td>
+  <td>✅</td>
+  <td>☑️</td>
+<td>Germany</td>
+<td>English</td>
+</tr>
+
+
+
 
 
 <tr>
 <td>Red de Interconexion Universitaria</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.sp-codes.de</td>
   <td></td>
   <td></td>
@@ -1023,7 +1048,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://talk.snopyta.org</td>
   <td></td>
   <td></td>
@@ -1046,7 +1071,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.teamcloud.work</td>
   <td></td>
   <td></td>
@@ -1067,7 +1092,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://framatalk.org</td>
   <td></td>
   <td></td>
@@ -1088,7 +1113,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>fux eG</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.arl.wtf</td>
   <td></td>
   <td></td>
@@ -1109,7 +1134,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>DFN</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.fem.tu-ilmenau.de</td>
   <td></td>
   <td></td>
@@ -1130,7 +1155,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>KAMP Netzwerkdienste GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.flyingcircus.io</td>
   <td></td>
   <td></td>
@@ -1151,7 +1176,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Freifunk Duesseldorf e.V.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.freifunk-duesseldorf.de</td>
   <td></td>
   <td></td>
@@ -1172,7 +1197,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.hamburg.ccc.de</td>
   <td></td>
   <td></td>
@@ -1193,7 +1218,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td></td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.hs-anhalt.de</td>
   <td></td>
   <td>Yes</td>
@@ -1214,7 +1239,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.osna.social</td>
   <td></td>
   <td></td>
@@ -1235,7 +1260,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Liberty Global B.V.</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://jitsi.v3g.de</td>
   <td></td>
   <td></td>
@@ -1256,7 +1281,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://konferenz.netzbegruenung.de</td>
   <td></td>
   <td></td>
@@ -1278,7 +1303,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://vc.autistici.org</td>
   <td></td>
   <td></td>
@@ -1300,7 +1325,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>SysEleven GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://viko.extinctionrebellion.de/</td>
   <td>Yes</td>
   <td>Yes</td>
@@ -1323,7 +1348,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.scheible.it</td>
   <td></td>
   <td></td>
@@ -1344,7 +1369,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Johann Wolfgang Goethe-Universitat Frankfurt am Main</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.studiumdigitale.uni-frankfurt.de</td>
   <td></td>
   <td></td>
@@ -1365,7 +1390,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.nerd.re</td>
   <td></td>
   <td></td>
@@ -1386,7 +1411,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.freifunk-rhein-sieg.net</td>
   <td></td>
   <td></td>
@@ -1407,7 +1432,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>manitu GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.alpha.berlin</td>
   <td></td>
   <td></td>
@@ -1428,7 +1453,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Hetzner Online GmbH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://https://teamjoin.de/</td>
   <td></td>
   <td></td>
@@ -1449,7 +1474,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>SWITCH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://unibe.meet.switch.ch</td>
   <td></td>
   <td></td>
@@ -1470,7 +1495,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>SWITCH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://unifr.meet.switch.ch</td>
   <td></td>
   <td></td>
@@ -1491,7 +1516,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>SWITCH</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://uzh.meet.switch.ch</td>
   <td></td>
   <td></td>
@@ -1513,7 +1538,7 @@ https://api.amplitude.com/"> 1</lot>
 
 <tr>
 <td>Nine Internet Solutions AG</td>
-<td  class="url" onclick="this.style.textDecoration = 'line-through'; navigator.clipboard.writeText(this.innerHTML);">
+<td  class="url" onclick="this.style.color = 'magenta'; navigator.clipboard.writeText(this.innerHTML + '/' + (Math.random() + 1).toString(36).substring(2));">
   https://meet.coredump.ch</td>
   <td></td>
   <td></td>
@@ -1543,9 +1568,9 @@ https://api.amplitude.com/"> 1</lot>
 
 <footer>
   <br>
-  <p>There is not much more to this table than appears at first glimpse. However you should note that the urls are not links but that they will be copied to your clipboard onclick. Also hovering over any number greater than 0 in the tracker column should tell you what the respective trackers are. Oh and the * symbol refers to an educated guess which can't be verified.</p>
+  <p>There is not much more to this table than appears at first glimpse. However you might want to note the following: The URLs in the URL column are not links. Instead they will be copied to your clipboard with the addition of a random string at the end when you click them. The * symbol refers to an educated guess which can't be verified and the 📞 symbol indicates support for phoning in to a meeting. Also, hovering over any number greater than 0 in the tracker column should tell you what the respective trackers are.</p>
   <br>
-  <p>This is by no means a complete dataset. If you would like to add more instances to the list, or if you find an existing error, please feel free to edit the page on Github at https://github.com/storkbasin/storkbasin.github.io/edit/main/jitsi-instances.html</p>
+  <p>This is by no means a complete dataset. If you would like to add more instances to the list, or if you find an existing error, please feel free to edit the page on Github at https://github.com/storkbasin/storkbasin.github.io/blob/main/jitsi-instances.html</p>
   <br>
   <p>Primary Source: https://jitsi.github.io/handbook/docs/community/community-instances</p>
   <br>
