@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {background: lightgreen;}
+body::webkit-scrollbar {
+display:none;}
+div {
+width: 95vw;
+margin: auto;
+}
+iframe {
+display:none;
+border: 1px solid black:
+min-height: 100%;
+width: 100%;
+background:lightgray;
+}
+g {
+color:white;
+background:black;}
+h1 {
+padding: 20px;
+text-align: center;
+color: brown;}
+h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+}
+div#title {
+background: white;
+border: 2px solid black;
+border-radius: 50%;}
+</style>
+</head>
+<body>
+<div id="title">
+<h1>Some Newsfeeds (mostly climate related)</h1>
+  <h3><a href="https://storkbasin.github.io/d88228acaaca8ac7bdfdffdc45ea1bb078f14e94.html">Switch to Social ➱</a></h3>
+</div>
+
+<br>
+<div>
+
+<h2>Environment – Gaurdian <g id="two" onclick="exPandtwo()">+</g></h2>
+<iframe id="twocontent" frameBorder="1" sandbox src="//rss.bloople.net/?url=https%3A%2F%2Fwww.theguardian.com%2Fus%2Fenvironment%2Frss&showtitle=false&type=html"></iframe>
+</div>
+
+<div>
+<h2>Climate – New York Times <g id="one" onclick="exPandone()">+</g></h2>
+<iframe id="onecontent" frameBorder="1" sandbox src="//rss.bloople.net/?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FClimate.xml&showtitle=false&type=html"></iframe>
+</div>
+
+<div>
+<h2>Common Dreams (not just climate) <g id="three" onclick="exPandthree()">+</g></h2>
+<iframe id="threecontent" frameBorder="1" sandbox src="//rss.bloople.net/?url=https%3A%2F%2Fwww.commondreams.org%2Frss.xml&showtitle=false&type=html"></iframe>
+</div>
+
+<script>
+let one=document.getElementById('one');
+let two=document.getElementById('two');
+let three=document.getElementById('three');
+let nytimes = document.getElementById('onecontent');
+let gaurdian = document.getElementById('twocontent');
+let commonds = document.getElementById('threecontent');
+
+function exPandone() {
+if (one.innerHTML=='+'){
+one.innerHTML="✕";nytimes.style.display="block";}
+else {
+one.innerHTML="+";nytimes.style.display="none";}
+
+}
+
+function exPandtwo() {
+if (two.innerHTML=='+'){
+two.innerHTML="✕";gaurdian.style.display="block";}
+else {
+two.innerHTML="+";gaurdian.style.display="none";}
+}
+
+function exPandthree() {
+if (three.innerHTML=='+'){
+three.innerHTML="✕";commonds.style.display="block";}
+else {
+three.innerHTML="+";commonds.style.display="none";}
+
+}
+</script>
+
+</body>
+
+</html>
