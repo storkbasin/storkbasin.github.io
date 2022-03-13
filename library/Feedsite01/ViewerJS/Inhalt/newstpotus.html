@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(205, 205, 205, 1), rgba(155, 155, 155, 1), rgba(105, 105, 105, 1), rgba(55, 55, 55, 1), rgba(05, 05, 05, 1));
+color: white;
+padding: none;
+}
+body::-webkit-scrollbar {
+display: none;
+}
+p {
+color: white;
+}
+iframe {
+display:none;
+margin: auto;
+border: 0px;
+width: 100vw;
+height: 82.8vh;
+box-shado:  0em 0.02em 0.2em yellow;
+border-radius: 0.12em;
+color: white;
+}
+iframe#content {
+display:block;
+}
+iframe::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+g {
+margin: auto;
+width: 8em;
+background: black;
+font-size: 1.1em;
+color: blue;
+padding: 0.2em;
+box-shadow: 0.04em 0.06em 0.2em 0em white;
+border-radius: 1em;
+font-size: 0.8em;
+z-index: -5;
+}
+div.navbar {
+width: 100vw;
+margin: auto;
+background: linear-gradient(rgba(50, 251, 255, 0.1), transparent);
+height: 15vh;
+z-index: -4;
+}
+g#profile {
+margin: auto;
+background: blue;
+color: white;
+font-size: 1.3em;
+opacity: 0;
+}
+div.people {
+background: linear-gradient(transparent, rgba(50, 251, 255, 0.1))
+</style>
+</head>
+<body>
+
+<div class="people">
+<g id="greta" onclick="sHowgreta()">&nbspGreta Thunberg +&nbsp</g>
+<g id="george" onclick="sHowgeorge()">&nbspGeorge Monbiot +&nbsp</g>
+<br>
+
+</div>
+
+
+<div class="navbar">
+<br>
+<g id="profile" ondblclick="sHowprofile()"></g>
+</div>
+<div>
+
+
+<iframe sandbox id="content"></iframe>
+
+<script>
+const content = document.getElementById('content');
+const profile = document.getElementById("profile");
+
+function sHowprofile() {
+if(profile.style.opacity > "0.2"){
+profile.style.opacity = "0";
+content.style.opacity="0";
+}
+else {
+profile.style.opacity = "1";
+content.style.opacity="1";
+}
+
+}
+
+function sHowgreta() {
+profile.style.opacity = "1";
+profile.innerHTML = "&nbspGreta Thunberg&nbsp";
+content.src = "//rss.bloople.net/?url=https%3A%2F%2Fnitter.net%2Fgretathunberg%2Frss&showtitle=false&type=html";
+}
+
+function sHowgeorge() {
+profile.style.opacity = "1";
+profile.innerHTML = "&nbspGeorge Monbiot&nbsp";
+content.src = "//rss.bloople.net/?url=https%3A%2F%2Fnitter.net%2Fgeorgemonbiot%2Frss&showtitle=false&type=html";
+}
+
+
+</script>
+
+</body>
+</html>
