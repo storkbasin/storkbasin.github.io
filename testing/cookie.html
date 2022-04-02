@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <body>
+    <h2 id="name"></h2>
+  </body>
 <script>
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
@@ -28,7 +31,7 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+   documentgetElementById("name").innerHTML = "Hello" + name;
   } else {
      user = prompt("Please enter your name:","");
      if (user != "" && user != null) {
