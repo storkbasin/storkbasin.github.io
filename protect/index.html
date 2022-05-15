@@ -1,0 +1,289 @@
+
+<HTML>
+
+<HEAD>
+<style media="screen">
+  *::-webkit-scrollbar{display: none}
+  body {background: linear-gradient(rgba(230, 239, 140, 0.6), rgba(134, 234, 170, 0.5))}
+  textarea {resize: vertical;}
+</style>
+
+
+  <TITLE>HTML enkodieren mit Passwort</TITLE>
+</HEAD>
+
+<BODY>
+	      <center>
+
+
+
+		      <div id="thecode" style="display:none">
+&lt;!doctype html&gt;
+&lt;html&gt;
+
+
+&lt;script language="JavaScript1.2"&gt;
+
+&lt;!--linebreak
+
+
+
+function get_password() {
+
+  let message = "Enter password"
+  if(navigator.language.includes('de')){
+    message = "Passwort eingeben"
+  }
+
+  orig_pass = prompt(message,"");
+
+  if (orig_pass!=null &amp;&amp; orig_pass!="")
+
+  password = new Array(orig_pass.length);
+
+  for(i=0; i&lt;orig_pass.length; i++) {
+
+    password[i] = orig_pass.charCodeAt(i);
+
+  }
+
+  return password;
+
+}
+
+
+
+password = get_password();
+
+orig = unescape("thecode");
+
+orig = orig.split("");
+
+
+
+passnum = orig.length % password.length;
+
+for(i=orig.length-1; i&gt;=0; i--) {
+
+
+
+  passnum--;
+
+  if (passnum == -1) passnum = password.length - 1;
+
+
+
+  pos1 = i;
+
+  pos2 = i + password[passnum];
+
+
+
+  if (pos2 &gt;= orig.length) continue;
+
+
+
+  char1 = orig[pos1];
+
+  char2 = orig[pos2];
+
+
+
+  orig[pos2] = char1;
+
+  orig[pos1] = char2;
+
+
+
+}
+
+
+
+orig1 = "";
+
+for(i=0;i&lt;orig.length;i++) {
+
+  orig1 = orig1 + orig[i];
+
+}
+
+orig1 = orig1.replace(/mmm/g,"\r\n");
+
+
+
+document.write(orig1);
+
+
+
+//--&gt;linebreak
+
+&lt;/script&gt;
+
+&lt;noscript&gt;JavaScript must be enabled in order to view this page&lt;/noscript&gt;
+&lt;/html&gt;
+
+</div>
+
+
+
+<script language="JavaScript1.2">
+
+
+
+function get_password() {
+
+  orig_pass = document.getElementById("pass").value;
+
+  password = new Array(orig_pass.length);
+
+  for(i=0; i<orig_pass.length; i++) {
+
+    password[i] = orig_pass.charCodeAt(i);
+
+  }
+
+  return password;
+
+}
+
+
+
+function do_encode() {
+
+  password = get_password();
+
+  orig = document.getElementById("as1").value;
+
+  orig = orig.replace(/\r\n/g,"mmm");
+
+  orig = orig.replace(/\r/g,"mmm");
+
+  orig = orig.replace(/\n/g,"mmm");
+
+  orig = orig.split("");
+
+
+
+  passnum = password.length - 1;
+
+  for(i=0; i<orig.length; i++) {
+
+
+
+    passnum++;
+
+    if (passnum == password.length) passnum = 0;
+
+
+
+    pos1 = i;
+
+    pos2 = i + password[passnum];
+
+
+
+    if (pos2 >= orig.length) continue;
+
+
+
+    char1 = orig[pos1];
+
+    char2 = orig[pos2];
+
+
+
+    orig[pos2] = char1;
+
+    orig[pos1] = char2;
+
+
+
+  }
+
+
+
+  orig1 = "";
+
+  for(i=0;i<orig.length;i++) {
+
+    orig1 = orig1 + orig[i];
+
+  }
+
+
+
+  thecode1 = document.getElementById("thecode").innerHTML;
+
+  thecode1 = thecode1.replace(/&lt;/g,'<');
+
+  thecode1 = thecode1.replace(/&gt;/g,'>');
+
+  thecode1 = thecode1.replace(/&amp;/g,'&');
+
+  // have to do this as Internet Explorer removes line breaks and spaces
+
+  thecode1 = thecode1.replace(/linebreak/g,"\n");
+
+  // and this is for Opera
+
+  thecode1 = thecode1.replace(/&quot;/g,'"');
+
+
+
+  orig1 = thecode1.replace(/thecode/,escape(orig1));
+
+  document.getElementById("as2").value = orig1;
+
+}
+
+</script>
+
+
+<script type="text/javascript">
+function setStrength(x) {
+  str= Math.pow(x.value.length, 2.4);
+  wep = (Math.pow(x.value.length, 1.8)/2);
+  let frog;
+  let dog = 230;
+  dog = 230 - wep;
+  if(wep<100) {frog=wep;}
+  else {frog = 101;}
+  x.style.background="rgba("+dog+"," + str +","+ frog +", 1)";
+}
+function copyCode() {
+  navigator.clipboard.writeText('d')
+  document.getElementById('as2').value= '2'
+}
+function hideSource() {
+  if (document.getElementById('as2').value.includes('keydown')){
+      document.getElementById("as2").value=document.getElementById("as2").value.replace("<script>"+"addEventListener('keydown', function(e){if(e.ctrlKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.keyCode == 123) {return false;}})"
+        +"</"+"script>", " ");}
+  else {document.getElementById("as2").value+="<script>"+"addEventListener('keydown', function(e){if(e.ctrlKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.keyCode == 123) {return false;}})"
+    +"</"+"script>"}
+}
+</script>
+<br>
+<br>
+
+<input type="checkbox" style="padding: 10px" onclick="hideSource()" name="" value="">
+<br>
+<br>
+
+
+			<TEXTAREA oninput="javascript:do_encode();" placeholder="HTML" style="width: 90vw; min-height: 15vh; height: 37vh; max-height: 86vh; color: black; padding: 10px;background: rgba(230, 230, 250, 0.9);outline:none;    border-color: transparent;
+" autofocus="true" name="as1" id="as1" rows=10 cols=50></TEXTAREA><BR />
+<br>
+      <INPUT ondblclick="setStrength(this)" oninput="javascript:do_encode();setStrength(this)"style="width: 90vw;  color: black;     border-color: transparent;
+    border-bottom: 0px solid black;padding: 10px;background: transparent;outline:none" placeholder="Passwort" type="text" name="pass" id="pass" /><BR />
+    <br>
+
+
+			<TEXTAREA onclick="copyCode(this)" placeholder="Enkodierter HTML" style="width: 90vw; color: black;min-height: 15vh; height: 37vh; max-height: 86vh; background: rgba(250, 250, 230, 0.9);outline:none;padding: 10px;border:none" name="as2" id="as2" rows=10 cols=50></TEXTAREA>
+<script type="text/javascript">
+function copyCode(x) {if (x.value.length < 1 || x.value.includes("copied")) {event.preventDefault();} else {navigator.clipboard.writeText(x.value); x.value='Code copied to clipboard';}}
+</script>
+</center>
+
+
+
+</body></HTML>
