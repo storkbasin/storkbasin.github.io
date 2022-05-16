@@ -9,10 +9,10 @@
 </style>
 
 
-  <TITLE>HTML enkodieren mit Passwort</TITLE>
+  <TITLE>🔐 Encode HTML with password</TITLE>
 </HEAD>
 
-<BODY>
+<BODY onload="hideSource();">
 	      <center>
 
 
@@ -82,22 +82,15 @@ for(i=orig.length-1; i&gt;=0; i--) {
   if (pos2 &gt;= orig.length) continue;
 
 
-
   char1 = orig[pos1];
 
   char2 = orig[pos2];
-
-
 
   orig[pos2] = char1;
 
   orig[pos1] = char2;
 
-
-
 }
-
-
 
 orig1 = "";
 
@@ -109,19 +102,10 @@ for(i=0;i&lt;orig.length;i++) {
 
 orig1 = orig1.replace(/mmm/g,"\r\n");
 
-
-
 document.write(orig1);
-
-
-
-//--&gt;linebreak
-
-&lt;/script&gt;
-
-&lt;noscript&gt;JavaScript must be enabled in order to view this page&lt;/noscript&gt;
+//--&gt;
+&lt;/script&gt;&lt;noscript&gt;JavaScript must be enabled in order to view this page&lt;/noscript&gt;
 &lt;/html&gt;
-
 </div>
 
 
@@ -250,37 +234,37 @@ function setStrength(x) {
   else {frog = 101;}
   x.style.background="rgba("+dog+"," + str +","+ frog +", 1)";
 }
-function copyCode() {
-  navigator.clipboard.writeText('d')
-  document.getElementById('as2').value= '2'
-}
+
 function hideSource() {
-  if (document.getElementById('as2').value.includes('keydown')){
+  if (document.getElementById('keydownscript').checked==false){
       document.getElementById("as2").value=document.getElementById("as2").value.replace("<script>"+"addEventListener('keydown', function(e){if(e.ctrlKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.keyCode == 123) {return false;}})"
-        +"</"+"script>", " ");}
-  else {document.getElementById("as2").value+="<script>"+"addEventListener('keydown', function(e){if(e.ctrlKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.keyCode == 123) {return false;}})"
-    +"</"+"script>"}
+        +"</"+"script>", "");}
+        else if(document.getElementById("as2").value.includes('keydown')){preventDefault()}
+  else if (document.getElementById('as2').value.length > 30){
+    document.getElementById("as2").value=document.getElementById("as2").value.replace("<noscript>JavaScript must be enabled in order to view this page</noscript>", "");
+    document.getElementById("as2").value=document.getElementById("as2").value.replace("</html>", "");
+    document.getElementById("as2").value+="<script>"+"addEventListener('keydown', function(e){if(e.ctrlKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==73){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==74){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==67){event.preventDefault();}if(e.ctrlKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.metaKey&&e.altKey&&e.which==85){event.preventDefault();}if(e.keyCode == 123) {return false;}})"
+    +"</"+"script>"+"<noscript>JavaScript must be enabled in order to view this page</noscript>"+"</html>"}
 }
 </script>
-<br>
-<br>
 
-<input type="checkbox" style="padding: 10px" onclick="hideSource()" name="" value="">
+<span style="font-size: 0.8em">Disable Inspection Keyboard Shortcuts</span>
+<input id="keydownscript" type="checkbox" checked="true"style="padding: 10px" onclick="hideSource()" name="" value="">
 <br>
-<br>
+<br style="line-height: 0.5">
 
 
-			<TEXTAREA oninput="javascript:do_encode();" placeholder="HTML" style="width: 90vw; min-height: 15vh; height: 37vh; max-height: 86vh; color: black; padding: 10px;background: rgba(230, 230, 250, 0.9);outline:none;    border-color: transparent;
+			<TEXTAREA oninput="javascript:do_encode();hideSource()" placeholder="HTML" style="width: 90vw; min-height: 15vh; height: 37vh; max-height: 86vh; color: black; padding: 10px;background: rgba(230, 230, 250, 0.9);outline:none;    border-color: transparent;
 " autofocus="true" name="as1" id="as1" rows=10 cols=50></TEXTAREA><BR />
 <br>
-      <INPUT ondblclick="setStrength(this)" oninput="javascript:do_encode();setStrength(this)"style="width: 90vw;  color: black;     border-color: transparent;
+      <INPUT ondblclick="setStrength(this)" oninput="javascript:do_encode();setStrength(this);hideSource();"style="width: 90vw;  color: black;     border-color: transparent;
     border-bottom: 0px solid black;padding: 10px;background: transparent;outline:none" placeholder="Passwort" type="text" name="pass" id="pass" /><BR />
     <br>
 
 
 			<TEXTAREA onclick="copyCode(this)" placeholder="Enkodierter HTML" style="width: 90vw; color: black;min-height: 15vh; height: 37vh; max-height: 86vh; background: rgba(250, 250, 230, 0.9);outline:none;padding: 10px;border:none" name="as2" id="as2" rows=10 cols=50></TEXTAREA>
 <script type="text/javascript">
-function copyCode(x) {if (x.value.length < 1 || x.value.includes("copied")) {event.preventDefault();} else {navigator.clipboard.writeText(x.value); x.value='Code copied to clipboard';}}
+function copyCode(x) {let possum; if (x.value.length < 1 || x.value.includes("copied")) {event.preventDefault();} else {navigator.clipboard.writeText(x.value); possum=x.value; x.value='Code copied to clipboard'; setTimeout(function() {x.value=possum}, 2000)}}
 </script>
 </center>
 
